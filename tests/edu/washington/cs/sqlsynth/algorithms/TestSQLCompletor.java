@@ -92,7 +92,7 @@ public class TestSQLCompletor extends TestCase {
 		}
 		
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_1_1]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -160,7 +160,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_1_2]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -225,7 +225,7 @@ public class TestSQLCompletor extends TestCase {
 		}
 		
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_1_4]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -290,7 +290,7 @@ public class TestSQLCompletor extends TestCase {
 		}
 		
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_1_6]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	public void test5_1_7()
@@ -339,7 +339,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_1_7]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -389,7 +389,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_1_8]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 
@@ -433,7 +433,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_1_3]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	public void test5_1_5()
@@ -472,7 +472,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_1_5]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	//NOTE this can not be figured by our language subset
@@ -512,7 +512,7 @@ public class TestSQLCompletor extends TestCase {
 		System.out.println("The final output....");
 		this.outputQueries(queries);
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_1_9]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -553,7 +553,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_1_10]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -594,7 +594,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_1_11]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	public void test5_1_12()
@@ -628,7 +628,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_1_12]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -837,7 +837,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_2_1]It took " + (endTime - startTime) + " milliseconds");
 		//throw new Error();
 	}
 	
@@ -896,7 +896,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_2_2]It took " + (endTime - startTime) + " milliseconds");
 		//throw new Error();
 	}
 	
@@ -956,7 +956,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_2_3]It took " + (endTime - startTime) + " milliseconds");
 		//throw new Error();
 	}
 	
@@ -1005,7 +1005,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_2_4]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -1052,7 +1052,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_2_5]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -1106,7 +1106,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_2_6]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -1154,7 +1154,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_2_7]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -1202,11 +1202,12 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark 5_2_8]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	public void test5_2_9()
 	{
+		long startTime = System.currentTimeMillis();
 		TableInstance input1 = TableInstanceReader.readTableFromFile("./dat/5_2_9/parts");
 		TableInstance input2 = TableInstanceReader.readTableFromFile("./dat/5_2_9/catalog");
 		TableInstance input3 = TableInstanceReader.readTableFromFile("./dat/5_2_9/suppliers");
@@ -1246,10 +1247,13 @@ public class TestSQLCompletor extends TestCase {
 		for(SQLQuery q : queries) {
 			System.out.println(q.toSQLString());
 		}
+		long endTime = System.currentTimeMillis();
+        System.out.println("[Benchmark 5_2_9]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	public void test5_2_10()
 	{
+		long startTime = System.currentTimeMillis();
 		SQLQueryCompletor.NESTED_CONDITION = true;
 		TableInstance input1 = TableInstanceReader.readTableFromFile("./dat/5_2_10/parts");
 		TableInstance input2 = TableInstanceReader.readTableFromFile("./dat/5_2_10/catalog");
@@ -1290,6 +1294,9 @@ public class TestSQLCompletor extends TestCase {
 		for(SQLQuery q : queries) {
 			System.out.println(q.toSQLString());
 		}
+		
+		long endTime = System.currentTimeMillis();
+        System.out.println("[Benchmark 5_2_10]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -1326,7 +1333,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark Forum_1]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -1363,7 +1370,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark Forum_2]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	
@@ -1400,7 +1407,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark Forum_3]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	public void testForum_5() {
@@ -1436,7 +1443,7 @@ public class TestSQLCompletor extends TestCase {
 			System.out.println(q.toSQLString());
 		}
 		long endTime = System.currentTimeMillis();
-        System.out.println("It took " + (endTime - startTime) + " milliseconds");
+        System.out.println("[Benchmark Forum_5]It took " + (endTime - startTime) + " milliseconds");
 	}
 	
 	public void testExampleForPresentation()

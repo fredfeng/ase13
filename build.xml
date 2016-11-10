@@ -36,6 +36,15 @@
 		<pathelement location="libs/weka-src.jar"/>
 	  </classpath>
 	</javac>
+    <javac srcdir="tests" destdir="classes" debug="true">
+	  <classpath>
+		<pathelement location="libs/mysql-connector-java-5.1.20-bin.jar"/>
+		<pathelement location="libs/plume.jar"/>
+		<pathelement location="libs/weka-3.6.0.jar"/>
+		<pathelement location="libs/weka-src.jar"/>
+	  </classpath>
+	</javac>
+
   </target>
 
   <target name="jar" depends="compile"
@@ -48,4 +57,24 @@
     <delete dir="classes"/>
     <delete file="sql.jar"/>
   </target>
+
+    <target name="junit" depends="jar">
+        <junit printsummary="yes" showoutput="true" haltonfailure="no" fork="yes">
+        <!-- Project classpath, must include junit.jar -->
+           <classpath>
+            <pathelement location="sql.jar"/>
+            <pathelement location="libs/junit-4.12.jar"/>
+            <pathelement location="libs/mysql-connector-java-5.1.20-bin.jar"/>
+            <pathelement location="libs/plume.jar"/>
+            <pathelement location="libs/weka-3.6.0.jar"/>
+            <pathelement location="libs/weka-src.jar"/>
+          </classpath>
+           
+        <!-- test class -->
+        <test name="edu.washington.cs.sqlsynth.algorithms.TestSQLCompletor" 
+            haltonfailure="no">
+            <formatter type="plain" usefile="false" />
+        </test>
+      </junit>
+    </target>
 </project>
