@@ -1,0 +1,11 @@
+order_id,var
+A,Prod1
+A,Prod3
+A,Prod4
+A,Prod5
+B,Prod3
+B,Prod4
+C,Prod1
+C,prod2
+C,Prod4
+C,Prod5

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="sql" default="jar">
+
+  <dirname property="this.dir" file="${ant.file}"/>
+  <property name="target.loc" location="${target}"/>
+
+  <target name="run" depends="jar">
+	<java classname="edu.washington.cs.sqlsynth.Main"
+          maxmemory="2g"
+          fork="true"
+          failonerror="true">
+	      <jvmarg value="-ea" />
+      <classpath>
+    	<pathelement location="./sql.jar"/>
+   		<pathelement location="libs/mysql-connector-java-5.1.20-bin.jar"/>
+		<pathelement location="libs/plume.jar"/>
+		<pathelement location="libs/weka-3.6.0.jar"/>
+		<pathelement location="libs/weka-src.jar"/>
+      </classpath>
+      <arg value="${input}"/>
+      <arg value="${output}"/>
+	</java>
+  </target>
+
+  <target name="init">
+    <mkdir dir="classes"/>
+  </target>
+
+  <target name="compile" depends="init"
+        description="compile the source " >
+    <javac srcdir="src" destdir="classes" debug="true">
+	  <classpath>
+		<pathelement location="libs/mysql-connector-java-5.1.20-bin.jar"/>
+		<pathelement location="libs/plume.jar"/>
+		<pathelement location="libs/weka-3.6.0.jar"/>
+		<pathelement location="libs/weka-src.jar"/>
+	  </classpath>
+	</javac>
+  </target>
+
+  <target name="jar" depends="compile"
+        description="generate the distribution" >
+    <jar jarfile="sql.jar" basedir="classes"/>
+  </target>
+
+  <target name="clean"
+		  description="clean up" >
+    <delete dir="classes"/>
+    <delete file="sql.jar"/>
+  </target>
+</project>
