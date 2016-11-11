@@ -1,4 +1,4 @@
-message.id,sender,recipient
+message_id,sender,recipient
 1,A,A
 1,A,C
 2,A,B
